@@ -37,12 +37,16 @@ body {
 
 .card_img {
     height: 87px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 0;
+    padding-bottom: 71px;
 }
 
 .card_img img {
     height: 125px;
     border-radius: 50%;
-    transform: translate(130%, -50%);
     width: 125px;
     object-fit: cover;
     border: 5px solid white;
@@ -183,4 +187,56 @@ span {
     text-decoration: none;
     font-size: 14px;
     letter-spacing: 1px;
+}
+
+
+/*------------------------- mobile desgin------------------------*/
+
+@media( min-width: 280px) and (max-width: 900px) {
+    body {
+        background: hsl(203, 29%, 95%);
+        margin: auto;
+    }
+    .title {
+        margin: 20px 0;
+        font-size: 24px;
+    }
+    .card_1,
+    .card_2,
+    .card_3 {
+        width: 100%;
+        margin: 20px auto;
+    }
+    .card_img {
+        display: flex;
+        justify-content: center;
+    }
+    .card_2 {
+        display: flex;
+        flex-direction: column;
+    }
+    .card2_left {
+        margin: auto;
+    }
+    .card_2 p,
+    h2 {
+        text-align: center;
+        margin: 10px 0;
+    }
+    .card2_right {
+        padding: 0;
+        margin: auto;
+    }
+    .card2_n {
+        margin-left: 57px;
+    }
+    .card_3 {
+        display: flex;
+        flex-direction: column;
+    }
+    .card3_img,
+    .card3_text,
+    .card3_button {
+        margin: auto;
+    }
 }
