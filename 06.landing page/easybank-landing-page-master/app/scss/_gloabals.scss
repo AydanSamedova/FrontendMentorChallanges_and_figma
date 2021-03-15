@@ -24,6 +24,7 @@
                 text-decoration: none;
             }
             
+            //========flexbox========
             .flex {
                 display: flex;
                 &-jc-c {
@@ -37,7 +38,12 @@
                 }
             }
             
-            button,
+            //========spacing========
+            .container {
+                padding-left: 1.5rem;
+                padding-right: 1.5rem;
+            }
+            
             .button {
                 padding: 0.875rem 1.875rem;
                 border-radius: 50px;

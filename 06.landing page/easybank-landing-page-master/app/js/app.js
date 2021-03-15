@@ -1,11 +1,15 @@
-const btnHamburger = document.getElementById('btnHamburger');
+const btnHamburger = document.querySelector('#btnHamburger');
+const overlay = document.querySelector('.overlay');
+const navbar = document.querySelector('.header_navbar')
+
+
 
 
 btnHamburger.addEventListener('click', function() {
-    console.log('asjda');
-    if (btnHamburger.classList.contains('open')) {
-        btnHamburger.classList.remove('open')
-    } else {
-        btnHamburger.classList.add('open')
-    }
+
+    btnHamburger.classList.toggle("open");
+    overlay.classList.toggle('overlay-visible')
+
+    navbar.classList.toggle('navbar-visible')
+
 });
