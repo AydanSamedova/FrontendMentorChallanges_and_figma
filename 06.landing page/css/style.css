@@ -24,6 +24,12 @@ a:hover {
   text-decoration: none;
 }
 
+h1,
+h2,
+h3 {
+  margin-top: 0px;
+}
+
 .flex {
   display: flex;
 }
@@ -41,8 +47,7 @@ a:hover {
 }
 
 .container {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+  padding: 2.25rem 1.5rem;
 }
 
 .button {
@@ -51,9 +56,17 @@ a:hover {
   cursor: pointer;
   background: linear-gradient(to right, #31d35c, #2bb7da);
   border: 0;
+  font-size: 0.875rem;
   outline: 0;
   color: white;
+  display: inline-block;
   font-weight: 400;
+  color: white;
+  transition: opacity 300ms ease-in-out;
+}
+
+.button:hover {
+  opacity: 0.75;
 }
 
 .button a {
@@ -170,16 +183,6 @@ a:hover {
   opacity: 1;
 }
 
-.header_cta {
-  font-size: 0.875rem;
-  color: white;
-  transition: opacity 300ms ease-in-out;
-}
-
-.header_cta:hover {
-  opacity: 0.75;
-}
-
 .header_navbar {
   opacity: 0;
   background: white;
@@ -195,5 +198,64 @@ a:hover {
   text-align: center;
   padding: 0.625rem;
   color: #9698a6;
+}
+
+.hero {
+  background-color: #fafafa;
+}
+
+@media (min-width: 64em) {
+  .hero {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.hero_img {
+  position: relative;
+  background-image: url("/easybank-landing-page-master/images/bg-intro-desktop.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 17.5rem;
+}
+
+@media (min-width: 64em) {
+  .hero_img {
+    flex: 1;
+    order: 2;
+    min-height: 41rem;
+  }
+}
+
+.hero_img::before {
+  content: '';
+  background-image: url("/easybank-landing-page-master/images/image-mockups.png");
+  width: 80%;
+  height: 100%;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: absolute;
+  transform: translate(6%);
+  top: 10%;
+}
+
+.hero_text {
+  text-align: center;
+}
+
+@media (min-width: 64em) {
+  .hero_text {
+    flex: 1;
+    order: 1;
+  }
+}
+
+.hero_text h1 {
+  font-weight: 300;
+  font-size: 2.9rem;
+  line-height: 1.15;
+  color: #2d314d;
 }
 /*# sourceMappingURL=style.css.map */
