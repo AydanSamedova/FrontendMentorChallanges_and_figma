@@ -17,16 +17,16 @@
             min-height: 35rem;
         }
         &::before {
+            top: 22%;
             content: '';
-            background-image: url('/easybank-landing-page-master/images/image-mockups.png');
-            width: 80%;
+            background-image: url(/easybank-landing-page-master/images/image-mockups.png);
+            width: 73%;
             height: 100%;
             background-position: center bottom;
             background-repeat: no-repeat;
             background-size: 100%;
             position: absolute;
             transform: translate(30%);
-            // top: 10%;
         }
     }
     &_text {
