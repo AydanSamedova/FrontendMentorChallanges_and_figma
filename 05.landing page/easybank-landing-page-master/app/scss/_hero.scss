@@ -1,0 +1,49 @@
+.hero {
+    background-color: $veryLightGray;
+    @include breakpoint-up(large) {
+        display: flex;
+        align-items: center;
+    }
+    &_img {
+        position: relative;
+        background-image: url('/easybank-landing-page-master/images/bg-intro-desktop.svg');
+        background-position: top top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 17.5rem;
+        @include breakpoint-up(large) {
+            flex: 1;
+            order: 2;
+            min-height: 35rem;
+        }
+        &::before {
+            top: 22%;
+            content: '';
+            background-image: url(/easybank-landing-page-master/images/image-mockups.png);
+            width: 73%;
+            height: 100%;
+            background-position: center bottom;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            position: absolute;
+            transform: translate(20%);
+        }
+    }
+    &_text {
+        text-align: center;
+        @include breakpoint-up(large) {
+            width: 40%;
+            order: 1;
+            text-align: left;
+        }
+        h1 {
+            font-weight: 300;
+            font-size: 2.9rem;
+            line-height: 1.15;
+            color: $darkBlue;
+            @include breakpoint-up(large) {
+                font-size: $font-xlg;
+            }
+        }
+    }
+}
