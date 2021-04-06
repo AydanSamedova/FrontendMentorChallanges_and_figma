@@ -300,7 +300,7 @@ h2 {
   background-repeat: no-repeat;
   background-size: 100%;
   position: absolute;
-  transform: translate(30%);
+  transform: translate(20%);
 }
 
 .hero_text {
@@ -467,5 +467,142 @@ h2 {
 
 .article_description {
   font-size: 0.8125rem;
+}
+
+.footer {
+  background-color: #2d314d;
+  color: white;
+  text-align: center;
+}
+
+@media (min-width: 64em) {
+  .footer .container {
+    display: grid;
+    grid-template-columns: repeat 31fr 2fr;
+    grid-template-rows: 1fr auto;
+    grid-template-areas: 'logo links1 links2 cta' 'social links1 links2 copyright';
+    justify-items: start;
+  }
+}
+
+.footer a {
+  color: white;
+}
+
+.footer_logo {
+  display: inline-block;
+}
+
+@media (max-width: 63.9375em) {
+  .footer_logo {
+    margin-bottom: 1.875rem;
+  }
+}
+
+@media (min-width: 64em) {
+  .footer_logo {
+    grid-area: logo;
+  }
+}
+
+@media (max-width: 63.9375em) {
+  .footer_social {
+    margin-bottom: 1.875rem;
+  }
+}
+
+@media (min-width: 64em) {
+  .footer_social {
+    grid-area: social;
+  }
+}
+
+.footer_social a {
+  display: inline-block;
+  height: 1, 25rem;
+}
+
+.footer_social a svg path {
+  transition: fill 150ms ease-in-out;
+}
+
+.footer_social a:hover svg path {
+  fill: #31d35c;
+}
+
+.footer_social a:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.footer_links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.9375rem;
+}
+
+@media (min-width: 64em) {
+  .footer_links {
+    justify-content: space-between;
+    align-items: start;
+  }
+}
+
+@media (min-width: 64em) {
+  .footer_links.col1 {
+    grid-area: links1;
+  }
+}
+
+@media (max-width: 63.9375em) {
+  .footer_links.col2 {
+    margin-bottom: 1.875rem;
+  }
+}
+
+@media (min-width: 64em) {
+  .footer_links.col2 {
+    grid-area: links2;
+  }
+}
+
+.footer_links a {
+  line-height: 2.25;
+  transition: color 150ms ease-in-out;
+}
+
+.footer_links a:hover {
+  color: #31d35c;
+}
+
+.footer_cta {
+  margin-bottom: 1.875rem;
+}
+
+@media (min-width: 64em) {
+  .footer_cta {
+    grid-area: cta;
+    text-align: right;
+    justify-self: end;
+  }
+}
+
+@media (max-width: 63.9375em) {
+  .footer_cta a.button {
+    margin-bottom: 1.875rem;
+  }
+}
+
+.footer_copyright {
+  font-size: 1.1825rem;
+  color: #9698a6;
+}
+
+@media (min-width: 64em) {
+  .footer_copyright {
+    grid-area: copyright;
+    align-self: end;
+    justify-self: end;
+  }
 }
 /*# sourceMappingURL=style.css.map */
