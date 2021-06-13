@@ -1,0 +1,23 @@
+.header {
+    width: $w100;
+    .container {
+        @include flex-justify-content-between;
+        .links {
+            width: 562px;
+            @include flex-justify-content-between;
+            a {
+                color: $blackText;
+                font-size: $font-md/2;
+                font-weight: $bold;
+            }
+        }
+        .header-btns {
+            @include flex-justify-content-between;
+            .header-btn {
+                &:hover {
+                    @include orange-btn;
+                }
+            }
+        }
+    }
+}

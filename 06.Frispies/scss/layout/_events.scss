@@ -1,0 +1,45 @@
+#events {
+    background-color: $lightWhite;
+    padding: 30px 50px;
+    .container {
+        .heading {
+            @include flex-justify-content-between;
+            padding: 15px;
+            h2 {
+                @include title;
+            }
+            .next {
+                @include flex-center-sp-evenly;
+                width: 150px;
+                h3 {
+                    @include next;
+                }
+            }
+        }
+        .cards {
+            .row {
+                @include flex-center-sp-evenly;
+                padding: 20px 0;
+                .card {
+                    @include card;
+                    .text-content {
+                        padding: 15px;
+                        h2 {
+                            font-size: 22px;
+                            font-weight: $regular;
+                            line-height: 28px;
+                            color: $blackText;
+                            width: 300px;
+                        }
+                        h3 {
+                            font-size: $font-md/2;
+                            color: $lightGray;
+                            font-size: $regular;
+                            margin: 10px 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

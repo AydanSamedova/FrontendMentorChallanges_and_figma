@@ -1,0 +1,80 @@
+.container {
+    .intro {
+        @include flex-justify-content-between;
+        width: 189px;
+        h3 {
+            @include intro_h3_dark;
+        }
+    }
+    .text {
+        @include flex-justify-content-between-top;
+        &_left {
+            width: 667px;
+            h1 {
+                color: $darkblue;
+                font-size: $font-xlg;
+                line-height: 67px;
+                font-weight: $bold;
+                margin: 0;
+                span {
+                    color: $darkOrange
+                }
+            }
+        }
+        &_right {
+            width: 382px;
+            h3 {
+                font-size: $font-lg/2;
+                font-weight: $regular;
+                color: $gray;
+                line-height: 30px;
+                margin: 12px 0;
+            }
+        }
+    }
+}
+
+.img-wrapper {
+    position: $relative;
+    height: 100vh;
+    .img-bg {
+        position: $absolute;
+        right: 0;
+    }
+    .find-space {
+        background-image: url(/images/BG.png);
+        height: 378px;
+        top: 70px;
+        position: $absolute;
+        width: 327px;
+        left: 118px;
+        padding: 40px;
+        h2 {
+            font-size: 34px;
+            font-weight: $bold;
+            line-height: 43px;
+            color: $white;
+        }
+        form {
+            @include flex-col-sp-evenly;
+            height: $w100;
+            .select {
+                padding: 10px;
+                background-color: $darknight;
+                select {
+                    padding: 5px 0;
+                    color: $white;
+                    background-color: $darknight;
+                    width: $w100;
+                }
+                .placeholder {
+                    color: $white;
+                    opacity: 0.35;
+                }
+            }
+            button {
+                padding: 15px;
+            }
+        }
+    }
+}

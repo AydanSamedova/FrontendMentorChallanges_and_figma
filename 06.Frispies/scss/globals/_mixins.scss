@@ -1,0 +1,119 @@
+@mixin flex-justify-content-center {
+    display: $flex;
+    justify-content: $center;
+}
+
+@mixin flex-align-item-center {
+    display: $flex;
+    align-items: $center;
+}
+
+@mixin flex-justify-content-between {
+    display: $flex;
+    justify-content: $space-between;
+    align-items: $center;
+}
+
+@mixin flex-justify-content-between-top {
+    display: $flex;
+    justify-content: $space-between;
+}
+
+@mixin flex-justify-content-center {
+    display: $flex;
+    justify-content: $center;
+    align-items: $center;
+    flex-direction: $col;
+}
+
+@mixin container-pall {
+    padding: $padding-py $padding-px;
+}
+
+@mixin container-py {
+    padding-top: $padding-t;
+    padding-bottom: $padding-b;
+}
+
+@mixin container-px {
+    padding-left: $padding-l;
+    padding-right: $padding-r;
+}
+
+@mixin orange-btn {
+    background-color: $lightOrange;
+    color: $white;
+    font-size: $font-md/2;
+    font-weight: $bold;
+}
+
+@mixin flex-col-sp-evenly {
+    display: $flex;
+    justify-content: $space-evenly;
+    flex-direction: $col;
+}
+
+@mixin flex-center-sp-evenly {
+    display: $flex;
+    justify-content: $space-evenly;
+    align-items: $center;
+}
+
+@mixin flex-center-sp-around {
+    display: $flex;
+    justify-content: $space-around;
+    align-items: $center;
+    flex-direction: $col;
+}
+
+@mixin title {
+    font-size: $font-lg;
+    font-weight: $bold;
+    color: $darkblue;
+    line-height: 51px;
+}
+
+@mixin next {
+    color: $lightOrange;
+    font-size: $font-md/2;
+    font-weight: $regular;
+    line-height: 26px;
+}
+
+@mixin card {
+    background-color: $white;
+    width: 350px;
+}
+
+@mixin miniBox {
+    position: $absolute;
+    width: 50px;
+    height: 40px;
+    background: $lightOrange;
+}
+
+@mixin underTitle {
+    font-weight: $regular;
+    font-size: $font-sm;
+    color: $lightGray;
+    line-height: 28px;
+    margin: 20px 0;
+}
+
+@mixin intro {
+    display: $flex;
+    align-items: $baseline;
+}
+
+@mixin intro_h3 {
+    color: $lightWhite;
+    font-size: $font-lg/2;
+    font-weight: $regular;
+    line-height: 30px;
+}
+
+@mixin intro_h3_dark {
+    color: $blackText;
+    font-size: $font-lg/2;
+    font-weight: $regular;
+}

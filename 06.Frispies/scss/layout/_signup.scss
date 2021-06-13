@@ -1,0 +1,58 @@
+#signup {
+    position: $relative;
+    background-image: url('/images/BG\ \(2\).png');
+    width: $w100;
+    height: 500x;
+    .container {
+        @include flex-justify-content-between;
+        .right {
+            .power-man {
+                right: 13%;
+                position: $absolute;
+                bottom: -0.6%;
+                z-index: 10;
+            }
+            .element2 {
+                position: $absolute;
+                top: 11%;
+                z-index: 2;
+                right: 13%;
+            }
+            .element1 {
+                position: $absolute;
+                left: 56%;
+                top: 68%;
+            }
+        }
+        .left {
+            padding: 50px 30px;
+            .intro {
+                width: 241px;
+                @include intro;
+                h3 {
+                    @include intro_h3;
+                }
+            }
+            h2 {
+                color: $white;
+                font-weight: $bold;
+                font-size: $font-lg;
+                line-height: 51px;
+                width: 445px;
+                margin: 0;
+            }
+            h3 {
+                color: $veryLightGray;
+                font-weight: $regular;
+                font-size: $font-lg/2;
+                line-height: 30px;
+                width: 430px;
+                margin-bottom: 35px;
+            }
+            a {
+                @include orange-btn;
+                padding: 12px 114px;
+            }
+        }
+    }
+}

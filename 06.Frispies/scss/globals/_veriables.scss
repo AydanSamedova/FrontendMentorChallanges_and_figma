@@ -1,0 +1,51 @@
+//=============COLORS=========================
+$darkblue: #10375C;
+$blackText:#222831;
+$darkOrange:#DD2C00;
+$darknight:#0D2C4A;
+$white: #FFFFFF;
+$lightOrange:#FF5722;
+$gray:#6A6A6A;
+$black:#000000;
+$lightGray:#9A9A9A;
+$lightWhite:#F8F8F8;
+$veryLightGray:#DFDFDF;
+$transparent:transparent;
+//=============FONT SIZE=========================
+$font-sm:1.125rem;
+$font-md:2rem; // 32/2=16px
+$font-md-2:2.125rem;
+$font-lg:2.5rem; // 40/2=20px
+$font-xlg:3.25rem; // 52/2=26px
+//==========font weight===========//
+$bold:700;
+$regular:400;
+$thin: 300;
+//----font------//
+$font: 'Lato',
+sans-serif;
+$none:none;
+//========flexbox========
+$flex:flex;
+$center:center;
+$space-between:space-between;
+$space-evenly:space-evenly;
+$space-around:space-around;
+$baseline:baseline;
+$row:row;
+$col:column;
+//========spacing========
+$auto:auto;
+$zero:0;
+//===positions===//
+$relative: relative;
+$absolute: absolute;
+//=======//
+//========padding ========//
+$padding-b: 1.5rem;
+$padding-t: 1.5rem;
+$padding-l: 1.5rem;
+$padding-r: 1.5rem;
+$padding-pall: $padding-t $padding-r $padding-b $padding-l;
+//=====//
+$w100:100%;

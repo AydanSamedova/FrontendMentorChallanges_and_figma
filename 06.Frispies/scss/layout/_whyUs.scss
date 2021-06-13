@@ -1,0 +1,57 @@
+#whyus {
+    .container {
+        justify-content: $space-between;
+        .left {
+            width: $w100/2;
+            .content {
+                @include flex-center-sp-evenly;
+                height: $w100;
+                .col {
+                    height: $w100;
+                    @include flex-center-sp-around;
+                    .box {
+                        height: 100px;
+                        @include flex-align-item-center;
+                        .text {
+                            padding-left: 30px;
+                            span {
+                                font-size: $font-md;
+                                color: $darkblue;
+                                line-height: 40px;
+                                font-weight: $thin;
+                            }
+                            h4 {
+                                color: $lightGray;
+                                font-weight: $thin;
+                                font-size: $font-md/2;
+                                line-height: 26px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .right {
+            width: 43%;
+            .content {
+                background-color: $darkblue;
+                padding: 50px;
+                margin: auto;
+                .intro {
+                    @include intro;
+                    h3 {
+                        @include intro_h3;
+                    }
+                }
+                h2 {
+                    @include title;
+                    color: $white;
+                }
+                h3 {
+                    @include underTitle;
+                    color: $white;
+                }
+            }
+        }
+    }
+}

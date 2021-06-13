@@ -1,0 +1,52 @@
+footer {
+    position: $relative;
+    padding: 50px 0;
+    background-image: url('/images/footer.png');
+    width: $w100;
+    .container {
+        @include flex-justify-content-between;
+        .desc {
+            h3 {
+                width: 255px;
+                font-weight: $regular;
+                font-size: $font-md/2;
+                line-height: 26px;
+                color: $lightWhite;
+                opacity: 85%;
+            }
+            .icons {
+                padding-top: 10px;
+                a {
+                    margin-right: 10px;
+                }
+            }
+        }
+        .links {
+            width: 65%;
+            @include flex-justify-content-between-top;
+            .col {
+                width: 212px;
+                h3 {
+                    margin: 0;
+                    color: $white;
+                    opacity: $w100/2;
+                    font-weight: $regular;
+                    font-size: $font-lg/2;
+                    line-height: 30px;
+                }
+                ul {
+                    padding: 0;
+                    li {
+                        line-height: 26px;
+                        margin: 10px 0;
+                    }
+                    a {
+                        font-weight: $thin;
+                        color: $white;
+                        font-size: $font-md /2;
+                    }
+                }
+            }
+        }
+    }
+}

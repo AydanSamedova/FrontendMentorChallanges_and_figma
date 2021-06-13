@@ -1,0 +1,37 @@
+#facilities {
+    .intro {
+        @include flex-justify-content-between;
+        h3 {
+            @include intro_h3_dark;
+        }
+    }
+    h2 {
+        @include title;
+        width: 555px;
+        margin: 10px 0;
+    }
+    .content {
+        @include flex-justify-content-between-top;
+        padding: 30px 0;
+        ul {
+            @include flex-col-sp-evenly;
+            height: 80%;
+            li {
+                padding: 24px;
+                a {
+                    color: $blackText;
+                    font-size: $font-lg/2;
+                    font-weight: $bold;
+                    line-height: 24px;
+                }
+                &:hover {
+                    background-color: $lightOrange;
+                    padding: 24px;
+                }
+                &:hover a {
+                    color: $white;
+                }
+            }
+        }
+    }
+}

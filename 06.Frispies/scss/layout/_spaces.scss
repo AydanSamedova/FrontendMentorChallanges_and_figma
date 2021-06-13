@@ -1,0 +1,84 @@
+#spaces {
+    .heading {
+        padding: 30px 0;
+        @include flex-justify-content-between;
+        h2 {
+            @include title;
+        }
+        h3 {
+            width: 440px;
+            @include underTitle;
+        }
+    }
+    .cards {
+        @include flex-justify-content-between;
+        .card {
+            @include card;
+            position: $relative;
+            h3 {
+                font-size: $font-lg/2;
+                font-weight: $bold;
+                color: $blackText;
+                margin: 10px 0;
+            }
+            .element {
+                position: $absolute;
+                @include miniBox;
+                bottom: 9%;
+                left: 0;
+                i {
+                    padding: 12px 20px;
+                    color: $white;
+                }
+            }
+            .bg-dark {
+                opacity: 0;
+                background: $darkblue;
+                width: 100%;
+                position: $absolute;
+                top: 0;
+                height: 460px;
+                .card-content {
+                    padding: 152px 48px;
+                    h2 {
+                        color: $white;
+                        font-size: $font-md;
+                        font-weight: $thin;
+                    }
+                    h3 {
+                        margin: 10px 0;
+                        font-size: $font-sm;
+                        font-weight: $regular;
+                        color: $white;
+                        line-height: 28px;
+                        width: 250px;
+                    }
+                }
+                .element {
+                    position: $absolute;
+                    display: $flex;
+                    width: 56%;
+                    height: 60px;
+                    background: $lightOrange;
+                    bottom: 0;
+                    left: 0;
+                    i {
+                        padding: 22px 20px;
+                        color: $white;
+                    }
+                }
+            }
+            &:hover .bg-dark {
+                opacity: 100%;
+            }
+        }
+        &_footer-element {
+            @include flex-justify-content-center;
+            margin: 35px 0;
+            span {
+                margin: 10px 0;
+                color: $blackText;
+            }
+        }
+    }
+}
