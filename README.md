@@ -69,7 +69,7 @@
  * Javascript - mobile design navbar
  * Responsive Design 
 
-## Online Consultation-my fisrt practise 
+## Online Consultation-my first practise 
  * 3 Page ready
  * Html 5
  * Scss
