@@ -1,0 +1,62 @@
+#slider {
+    max-width: 100%;
+    position: $relative;
+    .background-video {
+        width: $w100;
+        height: 600px;
+        overflow: $hdn;
+        @media (min-width: 1000px) {
+            width: $w100;
+        }
+        @media (min-width: 500px) {
+            width: $w100;
+        }
+    }
+    .overlay {
+        position: $absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        z-index: 2;
+        background: $bg-over;
+    }
+    .video-inner {
+        position: $absolute;
+        top: 125px;
+        left: 80px;
+        z-index: 3;
+        @media (min-width: 1000px) {
+            width: $w100;
+        }
+        @media (min-width: 500px) {
+            width: 300px;
+        }
+        cursor: $pointer;
+        .video-inner-item {
+            width: 600px;
+            .video-header {
+                color: $whte;
+                margin: $m_20_0;
+                font-size: 124px;
+                @media (max-width: 500px) {
+                    font-size: 80px;
+                }
+            }
+            .video-intro {
+                color: $whte;
+                margin: $m_20_0;
+                font-size: 30px;
+                font-weight: 600;
+            }
+        }
+    }
+    .button-item {
+        position: $absolute;
+        left: 80px;
+        top: 385px;
+        z-index: 3;
+        @include btn;
+        cursor: $pointer;
+    }
+}

@@ -1,0 +1,34 @@
+.service-visit {
+    .service-bg-wrapper {
+        height: 511px;
+        background: url(../image/pic/service-bg.jpg);
+        background-attachment: $b_at;
+        background-position: center;
+        background-repeat: $_norep;
+        background-size: $b_s;
+        @include d_r;
+        .service-bg-overlay {
+            @include b_over;
+            @include f_c_c;
+            .service {
+                @include f_c;
+                .service-visit-text {
+                    @media (min-width: 500px) {
+                        text-align: $txt;
+                    }
+                    @media (max-width: 500px) {
+                        text-align: $txt;
+                    }
+                    color: $whte;
+                    font-size: $f_48px;
+                    margin-bottom: 35px;
+                }
+                .news-button {
+                    @include d_j;
+                    @include btn;
+                    cursor: $pointer;
+                }
+            }
+        }
+    }
+}

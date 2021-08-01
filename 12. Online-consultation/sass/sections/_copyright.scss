@@ -1,0 +1,16 @@
+   .copyright {
+       @include d_j;
+       background: $pnk;
+       .copyright-inner {
+           width: $w1000;
+           height: 126px;
+           @include d_c-b;
+           .copyright-text {
+               color: $whte;
+               font-size: $f_14px;
+           }
+           .copyright-card {
+               cursor: $pointer;
+           }
+       }
+   }

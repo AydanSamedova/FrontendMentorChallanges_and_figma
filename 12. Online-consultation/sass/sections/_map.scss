@@ -1,0 +1,11 @@
+#map {
+    width: $w100;
+    cursor: $pointer;
+    iframe {
+        width: $w100;
+        height: 300px;
+    }
+    a {
+        display: $d_none;
+    }
+}

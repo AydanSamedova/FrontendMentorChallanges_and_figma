@@ -1,0 +1,186 @@
+@mixin d_j {
+    display: $flex;
+    justify-content: $jstf_c;
+}
+
+@mixin f_c {
+    display: $flex;
+    flex-direction: $column;
+}
+
+@mixin d_r {
+    display: $flex;
+    flex-direction: $row;
+}
+
+@mixin f_c_c {
+    display: $flex;
+    align-items: $algn_c;
+    justify-content: $jstf_c;
+}
+
+@mixin w_h {
+    width: $w100;
+    height: $hgt;
+}
+
+@mixin btn {
+    .appointment {
+        color: $whte;
+        background: $pnk;
+        p {
+            text-decoration: $a_none;
+            font-size: $f_16px;
+            padding: 20px 20px;
+            text-align: $txt;
+            font-weight: 600;
+            margin: 0;
+        }
+    }
+    .appointment:hover {
+        color: $pnk;
+        background: $whte;
+        transition: $trsnt;
+        box-shadow: 0px 0px 1px 1px #d95e61;
+        text-decoration: $a_none;
+    }
+}
+
+@mixin d_c {
+    display: $flex;
+    justify-content: $jstf_c;
+}
+
+@mixin d_r {
+    position: $relative;
+    display: $flex;
+    justify-content: $jstf_c;
+    width: $w100;
+}
+
+@mixin d_a {
+    display: $flex;
+    flex-direction: $row;
+    justify-content: $jstf_a;
+    align-items: $algn_c;
+    width: $w100;
+    background: $pnk;
+}
+
+@mixin d_c-b {
+    display: $flex;
+    flex-direction: $row;
+    justify-content: $Jstfy_b;
+    align-items: $algn_c;
+}
+
+@mixin d_c-c {
+    display: $flex;
+    flex-direction: $column;
+    align-items: $algn_c;
+}
+
+@mixin d_r-c {
+    display: $flex;
+    flex-direction: $row;
+    align-items: $algn_c;
+}
+
+@mixin d-b {
+    display: $flex;
+    flex-direction: $row;
+    justify-content: $Jstfy_b;
+}
+
+@mixin f_r-c {
+    display: $flex;
+    flex-direction: $row;
+    justify-content: $jstf_c;
+}
+
+@mixin p_n {
+    text-decoration: $a_none;
+    color: $pnk;
+}
+
+@mixin b_over {
+    background: $light_over;
+    width: $w100;
+}
+
+@mixin f_c_c-c {
+    display: $flex;
+    flex-direction: $column;
+    align-items: $algn_c;
+    justify-content: $jstf_c;
+}
+
+@mixin img {
+    border-radius: $brdr_50;
+    width: $w191;
+    height: $hgt_1;
+}
+
+@mixin w_14 {
+    color: $whte;
+    font-size: $f_14px;
+}
+
+@mixin bg {
+    background-size: $b_s;
+    background-attachment: $b_f;
+}
+
+@mixin f_b {
+    display: $flex;
+    justify-content: $Jstfy_b;
+}
+
+@mixin g_n {
+    text-decoration: $a_none;
+    color: $l_gray;
+}
+
+@mixin w_h {
+    width: $w100;
+    height: $hgt;
+}
+
+@mixin bar {
+    text-decoration: $a_none;
+    cursor: pointer;
+    font-weight: 900;
+    font-size: 16px;
+    padding: 28.2px 24px;
+    color: rgba(47, 47, 47, 0.7);
+}
+
+@mixin media {
+    width: $w100;
+    display: $flex;
+    flex-direction: $column;
+    align-items: $algn_c;
+}
+
+@mixin media1 {
+    width: $w100;
+    text-align: $txt;
+    padding-top: 30px;
+}
+
+@mixin title {
+    margin-bottom: 30px;
+    text-align: $txt;
+}
+
+@mixin h6 {
+    font-size: $f_14px;
+    color: $txt_c;
+    font-weight: 600;
+}
+
+@mixin h2 {
+    font-size: $f_48px;
+    color: $gray;
+    margin-top: 10px;
+}

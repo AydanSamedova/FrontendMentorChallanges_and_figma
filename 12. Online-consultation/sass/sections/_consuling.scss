@@ -1,0 +1,100 @@
+    .consuling {
+        font-family: $font;
+        padding-top: 70px;
+        margin-bottom: 50px;
+        @include f_c_c-c;
+        .blog-wrapper {
+            width: $w1000;
+            @media ( min-width: 470px) and (max-width: 770px) {
+                width: $w100;
+            }
+            @media ( max-width: 470px) {
+                width: $w100;
+            }
+            .title {
+                @include title;
+                h6 {
+                    @include h6;
+                }
+                h2 {
+                    @include h2;
+                }
+            }
+            .blogs {
+                @include d-b;
+                width: $w100;
+                flex-wrap: wrap;
+                justify-content: $jstf_c;
+                .blog {
+                    @media ( min-width: 770px) {
+                        width: 33%;
+                    }
+                    @media ( min-width: 470px) and (max-width:770px) {
+                        width: $w50;
+                    }
+                    @media ( max-width: 470px) {
+                        width: $w100;
+                    }
+                    margin-top: 20px;
+                    .blog-inner {
+                        @include d_c-c;
+                        .consuling-img {
+                            position: $relative;
+                            overflow: $hdn;
+                            @include img;
+                            margin: 27px 0;
+                            img {
+                                @include img;
+                                object-fit: $o_f;
+                            }
+                            .news-overlay {
+                                position: $absolute;
+                                width: $w100;
+                                border-radius: $brdr_50;
+                                @include f_c_c;
+                                transition: $trsnt;
+                                background: $light_over;
+                                a {
+                                    cursor: $pointer;
+                                    text-decoration: $a_none;
+                                    color: $whte;
+                                }
+                            }
+                        }
+                        .consuling-img:hover .news-overlay {
+                            top: 0;
+                            height: $hgt;
+                        }
+                        .blog-text {
+                            text-align: $txt;
+                            i {
+                                a {
+                                    cursor: $pointer;
+                                    font-size: $f_24px;
+                                    font-weight: 500;
+                                    color: $gray;
+                                }
+                            }
+                            i :hover {
+                                color: $pnk;
+                            }
+                            p {
+                                margin: 1.2857em;
+                                letter-spacing: 0.5px;
+                                line-height: 22px;
+                                color: $l_gray;
+                            }
+                            a {
+                                @include p_n;
+                                cursor: $pointer;
+                                span {
+                                    font-size: 13px;
+                                    color: $pnk;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }

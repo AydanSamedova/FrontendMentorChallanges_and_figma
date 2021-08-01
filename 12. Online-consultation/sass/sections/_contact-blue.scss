@@ -1,0 +1,34 @@
+#contact-blue {
+    font-family: $font;
+    margin: 1px 0;
+    @include d_j;
+    background: $blue;
+    .contact-inner {
+        width: $w1000;
+        padding: 20px 0;
+        @include d_c-b;
+        .contact-inner-item {
+            @include w_14;
+            h3 {
+                font-size: 20px;
+                padding-left: 20px;
+                font-weight: 900;
+            }
+        }
+        .contact-inner-item {
+            @include w_14;
+            .social-link {
+                cursor: $pointer;
+                @include d_r;
+                a {
+                    font-size: $f_14px;
+                    line-height: 4px;
+                    i {
+                        color: $whte;
+                        margin-right: 15px;
+                    }
+                }
+            }
+        }
+    }
+}

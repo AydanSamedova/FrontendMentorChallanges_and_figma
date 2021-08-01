@@ -1,0 +1,114 @@
+/*font face*/
+
+$font: 'Catamaran',
+sans-serif;
+body {
+    font-family: $font;
+}
+
+
+/* display*/
+
+$d_block: block;
+$d_none:none;
+$flex: flex;
+$row: row;
+$column: column;
+$jstf_c: center;
+$Jstfy_b: space-between;
+$algn_c: center;
+$jstf_a: space-around;
+
+/*text*/
+
+$txt:center;
+
+/*radius*/
+
+$brdr_50: 50%;
+
+/*width*/
+
+$w100: 100%;
+$w1000: 1000px;
+$w191: 191px;
+$w50: 50%;
+$w_500: 500px;
+$w_70: 70px;
+
+/*height*/
+
+$hgt: 100%;
+$hgt_1: 191px;
+
+/*color*/
+
+$pnk: #d95e61;
+$gray: #474747;
+$l_gray: #8f9090;
+$txt_c: #aead9a;
+$whte: #fff;
+$blue: #27ABB7;
+$inp: #e7e6e1;
+
+/*decoration*/
+
+$a_none: none;
+$out_none: none;
+$brdr_none: none;
+$l_none: none;
+
+/* overflow*/
+
+$hdn: hidden;
+
+/*positions*/
+
+$relative: relative;
+$absolute: absolute;
+
+/*cover*/
+
+$o_f:cover;
+$b_c: cover;
+$b_f: fixed;
+$b_at: fixed;
+$_norep: no-repeat;
+$b_s: cover;
+
+/*tansition*/
+
+$trsnt:all 0.3s ease;
+
+/*overlay*/
+
+$bg-over: rgba(0, 0, 0, 0.2);
+$light_over:rgba(0, 0, 0, 0.4);
+
+/*size*/
+
+$f_16px: 16px;
+$f_48px: 48px;
+$f_14px: 14px;
+$f_24px: 24px;
+
+/*border*/
+
+$b_w: 2px solid #fff;
+
+/*margin*/
+
+$_t_70: 70px;
+$m_20_0: 20px 0;
+
+/*line height*/
+
+$l_30: 30px;
+
+/* cursor*/
+
+$pointer: pointer;
+
+/* grid*/
+
+$col4: calc(8.3333%*4 - 10px);

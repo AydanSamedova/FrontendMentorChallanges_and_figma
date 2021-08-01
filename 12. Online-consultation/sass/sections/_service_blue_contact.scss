@@ -1,0 +1,35 @@
+#contact-blue {
+    font-family: $font;
+    margin: 1px 0;
+    @include d_j;
+    background: $blue;
+    .contact-inner {
+        width: $w1000;
+        padding: 20px 0;
+        @include d_c-b;
+        .contact-inner-item {
+            @include w_14;
+            h3 {
+                font-size: 20px;
+                padding-left: 20px;
+                font-weight: 900;
+            }
+        }
+        .contact-inner-item {
+            ul {
+                display: $flex;
+                li {
+                    font-size: $f_16px;
+                    a {
+                        color: $whte;
+                        text-decoration: $a_none;
+                    }
+                    span {
+                        color: $whte;
+                        margin-right: 5px;
+                    }
+                }
+            }
+        }
+    }
+}

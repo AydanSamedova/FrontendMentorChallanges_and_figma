@@ -1,0 +1,89 @@
+.blog {
+    font-family: $font;
+    margin-top: 60px;
+    @include f_c_c;
+    .blog-wrapper {
+        width: $w1000;
+        .blogs {
+            @media (min-width: 1000px) {
+                width: $w100;
+                @include f_b;
+            }
+            @media (max-width: 1000px) {
+                width: $w100;
+                display: $d_block;
+            }
+            .blog-row {
+                @media (min-width: 1000px) {
+                    width: $w50;
+                    @include f_b;
+                }
+                @media (min-width: 500px) {
+                    width: $w100;
+                    @include f_b;
+                }
+                @media (max-width: 500px) {
+                    width: $w100;
+                    display: $d_block;
+                }
+                .blog {
+                    @media (min-width: 1000px) {
+                        width: 24%;
+                    }
+                    @media (min-width: 500px) {
+                        width: 49%;
+                    }
+                    @media (min-width: 250px) {
+                        width: 100%;
+                    }
+                    .blog-inner {
+                        text-align: $txt;
+                        .blog-img {
+                            width: $w100;
+                            cursor: $pointer;
+                            img {
+                                border-radius: $brdr_50;
+                                width: 138px;
+                                height: 138px;
+                                margin-bottom: 27px;
+                            }
+                            & :hover {
+                                transform: scale(1.2);
+                                transition: all 0.5s ease;
+                            }
+                        }
+                        .blog-text {
+                            text-align: $txt;
+                            a {
+                                cursor: $pointer;
+                                i {
+                                    text-decoration: $a_none;
+                                    font-size: 24px;
+                                    font-weight: 500;
+                                    color: $gray;
+                                    &:hover {
+                                        color: $pnk;
+                                    }
+                                }
+                            }
+                            p {
+                                margin: 1.2857em;
+                                letter-spacing: 0.5px;
+                                line-height: 22px;
+                                color: $l_gray;
+                            }
+                            a {
+                                cursor: $pointer;
+                                @include p_n;
+                                span {
+                                    font-size: 13px;
+                                    color: $pnk;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

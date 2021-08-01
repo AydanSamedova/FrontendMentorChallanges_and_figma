@@ -1,0 +1,86 @@
+#service_v {
+    width: $w100;
+    .service-container {
+        width: $w100;
+        .title {
+            padding-top: 80px;
+            @include title;
+            h6 {
+                @include h6;
+            }
+            h2 {
+                @include h2;
+            }
+        }
+        .service-row {
+            width: $w1000;
+            margin: 80px auto;
+            @include d_c-b;
+            .service-blog {
+                width: 300px;
+                .service-img {
+                    width: $w100;
+                    height: 200px;
+                    margin-bottom: 20px;
+                    position: $relative;
+                    overflow: $hdn;
+                    img {
+                        width: $w100;
+                        height: $w100;
+                    }
+                }
+                .news-overlay {
+                    @include f_c_c;
+                    position: $absolute;
+                    top: -$w100;
+                    left: 0;
+                    @include w_h;
+                    transition: $trsnt;
+                    background: $light_over;
+                    a {
+                        color: $whte;
+                        cursor: $pointer;
+                    }
+                }
+            }
+            .service-img:hover .news-overlay {
+                top: 0;
+                @include w_h;
+            }
+            .blog-text {
+                text-align: $txt;
+                a {
+                    cursor: $pointer;
+                    i {
+                        text-decoration: $a_none;
+                        font-size: $f_24px;
+                        font-weight: 500;
+                        color: $gray;
+                        &:hover {
+                            color: $pnk;
+                        }
+                    }
+                }
+                p {
+                    margin: 1.2857em;
+                    letter-spacing: 0.5px;
+                    line-height: 22px;
+                    color: $l_gray;
+                }
+                a {
+                    cursor: $pointer;
+                    @include p_n;
+                    span {
+                        font-size: 13px;
+                        color: $pnk;
+                    }
+                }
+            }
+            .news-button {
+                @include d_j;
+                @include btn;
+                cursor: $pointer;
+            }
+        }
+    }
+}

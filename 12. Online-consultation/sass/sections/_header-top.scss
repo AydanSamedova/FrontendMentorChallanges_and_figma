@@ -1,0 +1,44 @@
+#header-top {
+    width: $w100;
+    @include f_c_c;
+    background: $pnk;
+    .top-contact {
+        @include d_c-b;
+        width: 1050px;
+        padding: 6px 0;
+        @media (max-width: 800px) {
+            display: $d_none;
+        }
+        .mail {
+            a {
+                text-decoration: $a_none;
+                color: $whte;
+                font-size: 12px;
+                cursor: $pointer;
+                i {
+                    margin: 8px;
+                }
+            }
+        }
+        .info {
+            ul {
+                @include d_r;
+                li {
+                    cursor: $pointer;
+                    list-style: $l_none;
+                    margin-right: 2.3em;
+                    a {
+                        text-decoration: $a_none;
+                        color: $whte;
+                        font-size: 12px;
+                        cursor: $pointer;
+                        i {
+                            margin: 5px;
+                            cursor: $pointer;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

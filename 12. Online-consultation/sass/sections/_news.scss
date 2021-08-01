@@ -1,0 +1,99 @@
+.news-wrapper {
+    .news-section {
+        margin-top: 96px;
+        .news {
+            height: $hgt;
+            margin-bottom: 60px;
+            padding-top: 40px;
+            .title {
+                @include title;
+                h6 {
+                    @include h6;
+                }
+                h2 {
+                    @include h2;
+                }
+            }
+            .news-wrap {
+                @include d_j;
+                @media (min-width: 200px) and (max-width: 1000px) {
+                    display: $flex;
+                    flex-direction: $column;
+                    align-items: $algn_c;
+                }
+                .news-post {
+                    width: $w_500;
+                    margin-right: 15px;
+                    @include f_c;
+                    @media (min-width: 1000px) {
+                        width: 500px;
+                    }
+                    .news-img {
+                        position: $relative;
+                        overflow: $hdn;
+                        @include w_h;
+                        .news-overlay {
+                            @include f_c_c;
+                            position: $absolute;
+                            top: -100%;
+                            left: 0;
+                            @include w_h;
+                            transition: $trsnt;
+                            background: $light_over;
+                            a {
+                                color: $whte;
+                                cursor: $pointer;
+                            }
+                        }
+                    }
+                    .news-img:hover .news-overlay {
+                        top: 0;
+                        @include w_h;
+                    }
+                    .news-text {
+                        text-align: $txt;
+                        padding: 36px 70px 0;
+                        font-size: 13px;
+                        color: $pnk;
+                        margin-bottom: 40px;
+                        a {
+                            text-decoration: $a_none;
+                            font-size: 13px;
+                            color: $pnk;
+                            margin: 5px;
+                            cursor: $pointer;
+                            span {
+                                margin-right: 3px;
+                            }
+                        }
+                        .news-admin {
+                            font-size: 13px;
+                            color: $txt_c;
+                            cursor: $pointer;
+                        }
+                        .news-admin ::before {
+                            margin-right: 4px;
+                        }
+                        h3 {
+                            font-size: 21px;
+                            color: $gray;
+                            margin-top: 20px;
+                        }
+                        p {
+                            font-size: $f_16px;
+                            color: $l_gray;
+                            margin-top: 15px;
+                            line-height: 20px;
+                        }
+                    }
+                }
+            }
+            .news-button {
+                @include d_j;
+                @include btn;
+                cursor: $pointer;
+                padding-top: 50px;
+            }
+        }
+    }
+}

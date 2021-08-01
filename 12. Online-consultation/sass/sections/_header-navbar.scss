@@ -1,0 +1,84 @@
+#header {
+    @include d_j;
+    .header-navbar {
+        justify-content: space-evenly;
+        @include d_r-c;
+        padding: 35px 0;
+        width: $w100;
+        @media (max-width: 800px) {
+            width: $w100;
+        }
+        .logo-wrapper {
+            @media (max-width: 800px) {
+                width: 400px;
+            }
+            img {
+                @include w_h;
+                object-fit: $o_f;
+                cursor: $pointer;
+            }
+        }
+        .navbar-menu {
+            @media (max-width: 800px) {
+                display: $d_none;
+            }
+            .navbar-menu-area {
+                display: $flex;
+                .nav-items {
+                    position: $relative;
+                    list-style: $l_none;
+                    font-size: $f_16px;
+                    color: $whte;
+                    margin: 0;
+                    .active {
+                        text-decoration: $a_none;
+                        color: $pnk;
+                        font-weight: 900;
+                        font-size: $f_16px;
+                        padding: 28.8px 24px;
+                    }
+                    .subnav-content {
+                        opacity: 0;
+                        position: $absolute;
+                        top: 50px;
+                        display: $flex;
+                        flex-direction: $column;
+                        background-color: $blue;
+                        width: $w191;
+                        z-index: 5;
+                        .home {
+                            cursor: $pointer;
+                            list-style: $l_none;
+                            width: $w100;
+                            padding: 16px 0;
+                            overflow: $hdn;
+                            .home_link {
+                                margin-left: 10px;
+                                text-decoration: $a_none;
+                                color: $whte;
+                                width: $w100;
+                            }
+                            &:hover {
+                                background-color: rgb(165, 213, 216);
+                            }
+                        }
+                    }
+                    .nav_link {
+                        text-decoration: $a_none;
+                        position: $relative;
+                        font-weight: 900;
+                        font-size: $f_16px;
+                        padding: 28.8px 24px;
+                        color: #474747;
+                        &:hover {
+                            color: $pnk;
+                        }
+                    }
+                    &:hover .subnav-content {
+                        opacity: 100;
+                    }
+                }
+            }
+        }
+    }
+}
