@@ -12,7 +12,7 @@ html {
 }
 
 body {
-    font-family: "Mulish", sans-serif;
+    font-family: 'Mulish', sans-serif;
     height: 100vh;
 }
 
@@ -42,13 +42,13 @@ section {
     margin: auto;
 }
 
- :root {
+:root {
     --dark-grey: #1f1534;
     --gray: #7d7987;
     --black: #000000;
     --white: #ffffff;
     --blue: #458ff6;
-    --light-blue: #5B9BF3;
+    --light-blue: #5b9bf3;
 }
 
 .btn {
@@ -273,14 +273,14 @@ section {
 
 .bg-blue {
     width: 100%;
-    background-image: url("/images/Rectangle\ 13.png");
+    background-image: url('../images/Rectangle\ 13.png');
     border-radius: 20px;
     padding: 62px;
 }
 
 .bg-blue h1 {
     text-align: center;
-    color: var(--white)
+    color: var(--white);
 }
 
 .customs-content {
@@ -312,7 +312,7 @@ section {
     font-size: 22px;
     line-height: 30px;
     width: 184px;
-    color: var(--white)
+    color: var(--white);
 }
 
 .customer-data h4 {
@@ -426,7 +426,7 @@ section {
 /* footer   */
 
 footer {
-    background-image: url("/images/footer/bg.png");
+    background-image: url('../images/footer/bg.png');
     width: 100%;
 }
 
@@ -479,7 +479,7 @@ footer {
     font-weight: 300;
     font-size: 16px;
     line-height: 28px;
-    color: var(--white)
+    color: var(--white);
 }
 
 .col-20 h3 {
