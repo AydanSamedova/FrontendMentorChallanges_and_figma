@@ -31,12 +31,12 @@
   * Responsive Design
   * Javascript - navbar  mobile design  hamburger menu
   
-## Figma - Frispies Landing Page
+## [Figma - Frispies Landing Page](https://www.figma.com/file/Lep83EmAltTvdv0PckCN07/Frispes-Landing-Page---%5B-Free-UI-Kit-%5D-(Community)?node-id=63%3A54)
    * Html5
    * Scss
    * common classes
    
-## Figma - Trafalgar Landing Page 
+## [Figma - Trafalgar Landing Page](https://www.figma.com/file/EWmzcVkd7qbP5Nf7iMvuqP/Trafalgar-Landing-Page?node-id=0%3A1) 
    * Html 5
    * Css 3
    * Using svg
@@ -69,7 +69,7 @@
  * Javascript - mobile design navbar
  * Responsive Design 
 
-## Online Consultation-my first practise 
+## [Online Consultation-my first practise](http://psychologist.ancorathemes.com/) 
  * 3 Page ready
  * Html 5
  * Scss
