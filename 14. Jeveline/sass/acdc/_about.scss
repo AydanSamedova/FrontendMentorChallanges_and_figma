@@ -1,0 +1,36 @@
+#about{
+    @include id-function;
+    margin: 0px 115px;
+    margin-top: 120px;
+    .goal{
+        padding-top: 55px;
+        margin-left: 20px;
+        .goal-text{
+            @include section-text;
+            h2{
+                @include section-text-h2;
+            }
+            p{
+                @include section-text-p;
+            }
+        }
+        .goal-statics{
+            @include statistics;
+            h2{
+                @include statistics-h2;  
+            }
+            p{
+                @include statistics-p;
+            }
+        }
+    }
+    .inner-image{
+        img{
+        @include img-division;
+        }
+    }
+}
+
+
+
+

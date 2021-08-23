@@ -1,0 +1,21 @@
+@import 'common/variables';
+@import 'common/mixin';
+@import 'acdc/about';
+@import 'acdc/workspace';
+@import 'acdc/servheader';
+@import 'acdc/services';
+@import 'acdc/video-introduction';
+@import 'acdc/pricing';
+@import 'acdc/header-top';
+@import 'acdc/header-navbar';
+@import 'acdc/slider';
+@import 'acdc/ideas';
+@import 'acdc/footer';
+@import 'acdc/nav-bar';
+
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: $mainFont;
+}

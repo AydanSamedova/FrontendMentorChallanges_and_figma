@@ -1,0 +1,38 @@
+#copyright {
+    background-color: black;
+    height: 130px;
+    @include flexWith;
+    @include JcC-AiC;
+    font-family: $mainFont;
+    .nav-bar-wrapper {
+        width: 1168px;
+        height: 130px;
+        display: flex;
+        flex-direction: row;
+        border-top: 1px solid #252525;
+        justify-content: space-between;
+        p {
+            padding: 30px;
+            color: #898989;
+        }
+        .nav ul {
+            display: flex;
+            flex-direction: row;
+            padding: 30px;
+            li {
+                padding: 0 18px;
+                a {
+                    text-decoration: none;
+                    color: white;
+                    font-size: 14px;
+                }
+            }
+            li :hover {
+                text-decoration: none;
+                color: #898989;
+                font-size: 14px;
+                transition: all 0.3s;
+            }
+        }
+    }
+}

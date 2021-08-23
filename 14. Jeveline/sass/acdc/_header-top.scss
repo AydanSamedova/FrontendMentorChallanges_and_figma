@@ -1,0 +1,38 @@
+#header {
+    background: url(/img/back.jpg);
+    @include header;
+}
+
+#header-top {
+    @include header-top;
+    @include flexWith;
+    .header-top-wrapper {
+        @include header-top-wrapper;
+        .top-contact {
+            display: $flex;
+            flex-direction: $flex-row;
+            h4 {
+                margin-left: 1em;
+                font-size: 13px;
+                color: $main-color-video;
+                font-weight: 300;
+            }
+            h4 span {
+                margin-right: 0.7em;
+                font-size: 17px;
+            }
+        }
+        .top-social-link {
+            display: $flex;
+            flex-direction: $flex-row;
+            color: $main-color-video;
+            a {
+                padding-right: 10px;
+                color: $main-color-video;
+            }
+            .search {
+                margin-left: 20px;
+            }
+        }
+    }
+}

@@ -1,0 +1,117 @@
+#pricing{
+    @include pricing-head;
+    
+}
+.first-col{
+    @include triple-same;
+    margin-left: 10px;
+    box-sizing: border-box;
+    padding-right: 20px;
+    .first-text{
+        @include first-col-text;
+        h2{
+            @include first-col-text-h2;
+        }
+        p{
+            @include first-col-text-p;
+        }
+    }
+}
+.second-col{
+    @include triple-same;
+    @include double-same;
+    background: #F7F6FF;
+   
+    .startup{
+        border-bottom: 1px solid #e4e2ff ;
+        h3{
+            @include double-same-h3;
+        }
+        h2{
+            @include double-same-h2;
+        }
+        p{
+            @include double-same-p;
+        }
+    }
+    .startup-list{
+        ul {
+            @include startup-ul;
+            li{ 
+                @include startup-li;
+            }
+            li:before {
+                @include startup-li-before;
+            }
+        }  
+    }
+    .startup-buttom {
+        margin-top: 50px;
+        a {
+            border: 2px solid #2d1dff;
+            border-radius: 3px;
+            padding: 18px 35px;
+            background: transparent;
+            text-decoration: none;
+            color: #fff;
+            font-size: 14px;
+            color: #111111;
+            font-family: $mainFont;
+            font-weight: 500;
+        }
+        .startup-buttom:hover {
+            border: 2px solid rgba(39, 34, 196, 0.452);
+            transition: all 0.4s;
+            cursor: pointer;
+        }
+    }
+    
+}
+.third-col{
+    @include triple-same;
+    @include double-same;
+    border: 2px solid $mainColor;
+    margin-right: 10px;
+    
+    .busines{
+        border-bottom: 1px solid #e4e2ff ;
+        h3{
+            @include double-same-h3;
+        }
+        h2{
+            @include double-same-h2;
+        }
+        p{
+            @include double-same-p;
+        }
+    }
+    .busines-list{
+        ul {
+            @include startup-ul;
+            li{
+                @include startup-li;
+            }
+            li:before {
+                @include startup-li-before;
+            }
+        }  
+     }
+     .busines-buttom {
+        margin-top: 50px;
+        a {
+            border-radius: 3px;
+            padding: 18px 35px;
+            background: #2d1dff;
+            text-decoration: none;
+            color: #fff;
+            font-size: 14px;
+            font-family: $mainFont;
+            font-weight: 500;
+        }
+        .busines-buttom :hover {
+            background: #2c1dffd8;
+            cursor: pointer;
+        }
+    }
+    
+}

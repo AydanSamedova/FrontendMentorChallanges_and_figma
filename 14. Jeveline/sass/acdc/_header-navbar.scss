@@ -1,0 +1,42 @@
+#nav-bar {
+    @include flexWith;
+    .nav-bar-wrapper {
+        @include flexWith;
+        padding: 34px 47px;
+        .logo-wrapper {
+            width: 100%;
+        }
+        .nav {
+            ul {
+                display: $flex;
+                flex-direction: $flex-row;
+                list-style: none;
+                li {
+                    padding: 0 18px;
+                    font-family: $mainFont;
+                    a {
+                        text-decoration: none;
+                        color: #fff;
+                        font-size: 15px;
+                    }
+                    .active {
+                        border-bottom: 2px solid $mainColor;
+                    }
+                    .blue-button {
+                        background: $mainColor;
+                        padding: 15px 30px;
+                        border-radius: 3px;
+                    }
+                    .blue-button :hover {
+                        background: #33a7b7;
+                    }
+                }
+                li :hover {
+                    font-family: $mainFont;
+                    color: rgba($color: #fff, $alpha: 0.6);
+                    transition: all 0.6s;
+                }
+            }
+        }
+    }
+}

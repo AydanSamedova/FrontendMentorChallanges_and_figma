@@ -1,0 +1,24 @@
+#services{
+    @include services;
+    .services-box{
+        @include service-box;
+        .service-box-inner{
+            .sb-inner-icon{
+                display: $flex;
+                justify-content: $justify-content-center;
+                .fa{
+                    color: $mainColor;
+                }
+            }
+            .sb-inner-text{
+                font-family: $mainFont;
+                h3{
+                    @include sb-textH3;
+                }
+                p{
+                    @include sb-textP;
+                }
+            }
+        }
+    }
+}

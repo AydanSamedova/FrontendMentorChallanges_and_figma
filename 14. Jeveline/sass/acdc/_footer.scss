@@ -1,0 +1,54 @@
+#footer {
+    @include flexWith;
+    height: 350px;
+    background-color: black;
+    @include JcC-AiC;
+    font-family: $mainFont;
+    .footer-row {
+        display: flex;
+        flex-direction: row;
+        width: 1168px;
+        height: 340px;
+        margin-top: 50px;
+        justify-content: space-between;
+        .footer-inner {
+            width: 300px;
+            height: 270px;
+            padding: 20px;
+            margin-right: 30px;
+        }
+        p {
+            margin: 20px 0;
+            color: white;
+            line-height: 25px;
+        }
+        .icon {
+            span {
+                margin-right: 15px;
+                color: white;
+            }
+        }
+        .footer-list {
+            h3 {
+                color: white;
+                font-size: 16px;
+                font-weight: 600;
+                padding-left: 40px;
+            }
+            .footer-list-item li {
+                list-style: none;
+                line-height: 35px;
+                a {
+                    text-decoration: none;
+                    color: #898989;
+                    font-size: 15px;
+                }
+            }
+            .footer-list-item li :hover {
+                color: rgba($color: #fff, $alpha: 0.6);
+                text-decoration: none;
+                transition: all 0.3s;
+            }
+        }
+    }
+}
